@@ -35,3 +35,55 @@ nav {
 nav span {
   padding: 10px;
 }
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.column {
+  margin-right: 30px;
+  border: 1px solid black;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.main-story {
+  border: 1px solid black;
+}
+
+.other-stories {
+  border: 1px solid black;
+}
+
+.image-headline {
+  border: 1px solid black;
+}
+
+.text-headline {
+  border: 1px solid black;
+}
+
+.story {
+  border: 1px solid black;
+}
+
+.narrative {
+  border: 1px solid black;
+  margin: 0;
+}
+
+.newsbites {
+  border: 1px solid black;
+}
