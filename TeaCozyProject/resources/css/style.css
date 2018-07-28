@@ -1,0 +1,134 @@
+/* Universal styles */
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+}
+
+a {
+  color: seashell;
+}
+
+h2, h4 {
+  background-color: black;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Header styles */
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+header nav span {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* Content styles */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+/* Banner styles */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 1200px;
+  margin-bottom: 50px;
+}
+
+/* Featured Tea styles */
+.teaofthemonth {
+  width: 1000px;
+  margin-bottom: 50px;
+}
+
+.teas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea {
+  width: 300px;
+  margin: 15px;
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+/* Location styles */
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-size: contain;
+  height: 500px;
+  width: 1200px;
+}
+
+.locations h2 {
+  background-color: transparent;
+}
+
+.addresses {
+  display: flex;
+  justify-content: center;
+}
+
+.address {
+  background-color: black;
+  text-align: center;
+  width: 300px;
+  margin: 40px;
+}
+
+/* Footer styles */
+
+.contact {
+  text-align: center;
+  height: 200px;
+}
+
+.copyright {
+  padding-left: 20px;
+}
