@@ -1,0 +1,232 @@
+html {
+  color: white;
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  width: auto;
+}
+
+header span {
+  padding: 0.66rem 1rem;
+}
+
+/* Banner styles */
+.banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 25rem;
+  justify-content: center;
+}
+
+.newarrivals {
+  background-color: black;
+  font-weight: bold;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  width: 20rem;
+}
+
+.newarrivals h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .newarrivals {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .newarrivals h4 {
+    font-size: 0.77rem;
+  }
+
+  .newarrivals h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Nav styles */
+nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+}
+
+nav .container {
+  justify-content: space-between;
+  padding: 0.75rem 0rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav .container {
+    justify-content: center;
+  }
+}
+
+/* Content Styles */
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+/* Featured items styles */
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.feature {
+  border: 4px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30%;
+}
+
+.image-container {
+  align-items: center;
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.image-container img {
+  height: auto;
+  max-width: 100%;
+  max-height: 9rem;
+  width: auto;
+}
+
+.feature span {
+  background-color: black;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  #menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #glasses {
+    display: none;
+  }
+
+  #menu-full {
+    display: none;
+  }
+
+  .feature {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #watch {
+    display: none;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+}
+
+/* Contact info styles */
+.contact {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+
+.location, .hours {
+  display: flex;
+  flex-wrap: wrap;
+  width: 35%;
+}
+
+.location span, .hours span {
+  background-color: black;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.location p, .hours p {
+  color: black;
+}
+
+@media only screen and (max-width: 470px) {
+  .contact {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .location, .hours {
+    width: 90%;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* Footer styles */
+footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 470px) {
+  footer span {
+    text-align: center;
+    width: 100%;
+  }
+}
