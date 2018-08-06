@@ -1,0 +1,134 @@
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+
+  border: 1px solid red;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid red;
+}
+
+header .logo {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  padding: 1rem 1.5rem;
+}
+
+header .logo img {
+  height: 2rem;
+  width: auto;
+}
+
+header .logo p {
+  line-height: 2;
+  padding-right: .25rem;
+}
+
+header nav {
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+header nav span {
+  padding-left: 1rem;
+}
+
+.banner {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.banner .container .image-container{
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.banner .container .image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.information .container .main-content {
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.main-content .image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.main-content .image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.additional-content {
+  width: 40%;
+}
+
+.info {
+  display: flex;
+  padding: 1rem;
+}
+
+.info .image-container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.info .image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-content {
+  margin: auto 0;
+  width: 65%;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .container {
+  flex-direction: column;
+}
+
+.features .container h1 {
+  padding: 2rem 0; 
+  text-align: center;
+  width: 100%;
+  border: 1px solid red;
+}
