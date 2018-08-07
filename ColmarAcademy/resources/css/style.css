@@ -1,5 +1,6 @@
 html {
-  font-family: Helvetica;
+  color: #1A181B;
+  font-family: 'Questrial';
   font-size: 16px;
 }
 
@@ -32,6 +33,34 @@ nav span {
   padding-left: 1rem;
 }
 
+nav span a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  color: #1F9393;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: #474A48;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  color: #474A48;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 header {
   align-items: center;
   display: flex;
@@ -51,8 +80,13 @@ header .logo img {
 }
 
 header .logo p {
+  font-weight: bold;
   line-height: 2;
   padding-right: .25rem;
+}
+
+header .logo p:last-child {
+  color: #CCCDCD;
 }
 
 header nav {
@@ -61,7 +95,7 @@ header nav {
 }
 
 .banner {
-  background-color: lightgray;
+  background-color: #CCCDCD;
   display: flex;
   justify-content: center;
 }
@@ -74,7 +108,21 @@ header nav {
   margin: auto 0;
 }
 
-.banner-content h1, .banner-content h2 {
+.banner-content p {
+  background-color: #474A48;
+  padding: 0.5rem;
+  text-align: center;
+  width: 75%;
+}
+
+.banner-content p a {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.banner-content h1, .banner-content h3 {
   padding-bottom: 1.5rem;
 }
 
@@ -87,16 +135,28 @@ header nav {
   padding: 2rem 1.5rem;
 }
 
-.information .container .main-container  h1 {
+.information .container .main-container  h2 {
   padding: 2rem 0 1.5rem 0;
 }
 
 .citation {
+  color: #CCCDCD;
+  font-size: 0.75rem;
   padding-top: 2rem;
 }
 
+.information .container .side-container {
+  border-left: 1px solid #CCCDCD;
+  padding-top: 1rem;
+}
+
 .info {
+  border-bottom: 1px solid #CCCDCD;
   display: flex;
+}
+
+.info:last-child {
+  background-color: #9CEDD1;
 }
 
 .info .image-container {
@@ -109,12 +169,12 @@ header nav {
   width: 65%;
 }
 
-.info-content h2, .info-content p {
+.info-content h3, .info-content p {
   padding-bottom: 0.5rem;
 }
 
 .features {
-  background-color: lightgray;
+  background-color: #CCCDCD;
   display: flex;
   justify-content: center;
 }
@@ -142,7 +202,7 @@ header nav {
   width: 25%;
 }
 
-.course h2 {
+.course h4 {
   padding: 1rem 1rem 0 1rem;
 }
 
@@ -185,6 +245,7 @@ header nav {
 
 .thesis {
   display: flex;
+  padding-top: 0.5rem;
 }
 
 .thesis .image-container {
@@ -197,7 +258,7 @@ header nav {
   width: 65%;
 }
 
-.thesis-content h2{
+.thesis-content h3 {
   padding: 1rem 0;
 }
 
