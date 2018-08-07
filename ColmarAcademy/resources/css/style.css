@@ -6,16 +6,36 @@ html {
 .container {
   display: flex;
   width: 1200px;
+}
 
-  border: 1px solid red;
+.main-container {
+  width: 60%;
+}
+
+.side-container {
+  width: 40%;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+nav span {
+  padding-left: 1rem;
 }
 
 header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-
-  border: 1px solid red;
 }
 
 header .logo {
@@ -40,33 +60,22 @@ header nav {
   padding: 1rem 1.5rem;
 }
 
-header nav span {
-  padding-left: 1rem;
-}
-
 .banner {
   background-color: lightgray;
   display: flex;
   justify-content: center;
 }
 
-.banner .container .image-container{
-  overflow: hidden;
+.banner .container .main-container {
   padding: 2rem 1.5rem;
-  width: 60%;
-}
-
-.banner .container .image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .banner-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
+  margin: auto 0;
+}
+
+.banner-content h1, .banner-content h2 {
+  padding-bottom: 1.5rem;
 }
 
 .information {
@@ -74,42 +83,25 @@ header nav span {
   justify-content: center;
 }
 
-.information .container .main-content {
+.information .container .main-container {
   padding: 2rem 1.5rem;
-  width: 60%;
 }
 
-.main-content .image-container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+.information .container .main-container  h1 {
+  padding: 2rem 0 1.5rem 0;
 }
 
-.main-content .image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.additional-content {
-  width: 40%;
+.citation {
+  padding-top: 2rem;
 }
 
 .info {
   display: flex;
-  padding: 1rem;
 }
 
 .info .image-container {
+  padding: 1rem;
   width: 35%;
-  height: auto;
-  overflow: hidden;
-}
-
-.info .image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .info-content {
@@ -117,7 +109,12 @@ header nav span {
   width: 65%;
 }
 
+.info-content h2, .info-content p {
+  padding-bottom: 0.5rem;
+}
+
 .features {
+  background-color: lightgray;
   display: flex;
   justify-content: center;
 }
@@ -127,8 +124,92 @@ header nav span {
 }
 
 .features .container h1 {
-  padding: 2rem 0; 
+  padding-top: 2rem;
   text-align: center;
   width: 100%;
-  border: 1px solid red;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.course {
+  background-color: white;
+  margin: 1rem;
+  width: 25%;
+}
+
+.course h2 {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.course p {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.course p:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.thesis-exhibit {
+  display: flex;
+  justify-content: center;
+}
+
+.thesis-exhibit .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-exhibit .container h1 {
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.thesis-exhibit-content {
+  display: flex;
+}
+
+.thesis-exhibit-content .main-container {
+  padding: 1.5rem;
+}
+
+.thesis-exhibit-content .main-container h2 {
+  padding: 0.5rem 0;
+}
+
+.thesis {
+  display: flex;
+}
+
+.thesis .image-container {
+  margin: 1rem;
+  width: 35%;
+}
+
+.thesis-content {
+  margin: auto 0;
+  width: 65%;
+}
+
+.thesis-content h2{
+  padding: 1rem 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container {
+  justify-content: space-between;
+}
+
+.copyright, footer .container nav {
+  padding: 1rem 1.5rem;
 }
