@@ -6,7 +6,7 @@ html {
 
 .container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .main-container {
@@ -33,9 +33,13 @@ nav span {
   padding-left: 1rem;
 }
 
-nav span a {
-  color: black;
+a {
+  color: #1A181B;
   text-decoration: none;
+}
+
+a:hover {
+  color:  #1F9393;
 }
 
 h1 {
@@ -94,6 +98,20 @@ header nav {
   padding: 1rem 1.5rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:640px) {
+  .full {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
 .banner {
   background-color: #CCCDCD;
   display: flex;
@@ -111,8 +129,17 @@ header nav {
 .banner-content p {
   background-color: #474A48;
   padding: 0.5rem;
+  pointer-events: none;
   text-align: center;
   width: 75%;
+}
+
+.banner-content p:hover {
+  background-color: #1F9393;
+}
+
+.banner-content p > a {
+    pointer-events: auto;
 }
 
 .banner-content p a {
@@ -126,6 +153,29 @@ header nav {
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width:860px) {
+  .banner .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .banner .container .main-container {
+    padding: 0 0 1rem 0;
+    width: 100%;
+  }
+
+  .banner .container .side-container {
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .banner-content p {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
 .information {
   display: flex;
   justify-content: center;
@@ -133,6 +183,23 @@ header nav {
 
 .information .container .main-container {
   padding: 2rem 1.5rem;
+}
+
+@media only screen and (max-width:860px) {
+  .information .container .main-container {
+    width: auto;
+    flex-shrink: 2;
+  }
+
+  .information .container .side-container {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width:590px) {
+  .information .container .main-container {
+    display: none;
+  }
 }
 
 .information .container .main-container  h2 {
@@ -156,7 +223,7 @@ header nav {
 }
 
 .info:last-child {
-  background-color: #9CEDD1;
+  background-color: #94C9C1;
 }
 
 .info .image-container {
@@ -166,11 +233,20 @@ header nav {
 
 .info-content {
   margin: auto 0;
+  padding-right: 1rem;
   width: 65%;
 }
 
 .info-content h3, .info-content p {
   padding-bottom: 0.5rem;
+}
+
+.info-content a {
+  color: #474A48;
+}
+
+.info-content a:hover {
+  color:#1F9393;
 }
 
 .features {
@@ -214,6 +290,44 @@ header nav {
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 790px) {
+  .course p {
+    display: none;
+  }
+
+  .course h4 {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:590px) {
+  .features {
+    background-color: white;
+    border-top: 1px solid #CCCDCD;
+    border-bottom: 1px solid #CCCDCD;
+  }
+  .course .image-container img {
+    display: none;
+  }
+
+  .course {
+    background-color: #94C9C1;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .course h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  .course {
+    margin: 0.5rem;
+    width: 50%;
+  }
+}
+
 .thesis-exhibit {
   display: flex;
   justify-content: center;
@@ -243,9 +357,33 @@ header nav {
   padding: 0.5rem 0;
 }
 
+.thesis-exhibit-content .side-container{
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width:860px) {
+  .thesis-exhibit-content .main-container {
+    width: auto;
+    flex-shrink: 2;
+  }
+
+  .thesis-exhibit-content .side-container {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width:590px) {
+  .thesis-exhibit-content .side-container {
+    display: none;
+  }
+}
+
 .thesis {
-  display: flex;
-  padding-top: 0.5rem;
+  display: flex;;
+}
+
+.thesis:first-child {
+  background-color: #94C9C1;
 }
 
 .thesis .image-container {
@@ -255,6 +393,7 @@ header nav {
 
 .thesis-content {
   margin: auto 0;
+  padding: 0 0.5rem 0.5rem 0;
   width: 65%;
 }
 
@@ -263,14 +402,22 @@ header nav {
 }
 
 footer {
+  background-color: #94C9C1;
   display: flex;
   justify-content: center;
 }
 
 footer .container {
   justify-content: space-between;
+  width: 100%;
 }
 
 .copyright, footer .container nav {
   padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width:590px) {
+  footer .container nav {
+    display: none;
+  }
 }
