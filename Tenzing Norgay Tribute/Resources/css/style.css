@@ -1,0 +1,109 @@
+html {
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #EEF0F2;
+}
+
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+header {
+  background-color: #5B5B5B;
+  padding: 1rem;
+}
+
+h1 {
+  color: #FCFAFA;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  color: #FCFAFA;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.banner {
+  background-color: #407271;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 1000px;
+  padding: 2rem 0;
+}
+
+.img-container {
+  height: auto;
+  overflow: hidden;
+  width: 70%;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  background-color: white;
+  line-height: 1.25rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 70%;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.info p {
+  line-height: 1.5rem;
+  padding: 1rem;
+  text-align: center;;
+}
+
+.quote-container {
+  background-color: #84B5AF;
+  font-style: italic;
+  line-height: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+  width: auto;
+}
+
+.quote {
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  padding: 3rem;
+}
+
+.link a {
+  color: #407271;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: #84B5AF;
+}
