@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Survey Form</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Foster Pet Survey Form</h1>
+    </header>
+    <div id="form-outer">
+      <p id="description">Please answer the following questions so we can match you with a foster pet.</p>
+      <form id="survey-form" method="get" action="/submit-form">
+        <div class="input-row">
+          <div class="input-label">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="input-enter">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="input-enter">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label id="number-label" for="pets">* Current pets: </label>
+          </div>
+          <div class="input-enter">
+            <input type="number" name="pets" id="number" class="input-field" min="1" max="10" placeholder="Current number of pets" required>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label for="pet-type">Would you prefer to foster a cat or a dog?</label>
+          </div>
+          <div class="input-enter">
+            <select id="dropdown" name="pet-type" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="either">No preference</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label for="availability">* How many hours per day would the pet be left alone?</label>
+          </div>
+          <div class="input-enter">
+            <ul>
+              <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="input-text">0-4 hours</label></li>
+              <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="input-text">5-8 hours</label></li>
+              <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="input-text">9-12 hours</label></li>
+              <li class="radio"><label><input name="radio-buttons" value="4" type="radio" class="input-text">12+ hours</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label for="preferences">What behaviors/attributes would you be comfortable with in a foster pet?<br>(Check all that apply)</label>
+          </div>
+          <div class="input-enter">
+            <ul>
+              <li class="checkbox"><label><input name="preferences" value="1" type="checkbox" class="input-text">Not house-trained</label></li>
+              <li class="checkbox"><label><input name="preferences" value="2" type="checkbox" class="input-text">Not crate-trained</label></li>
+              <li class="checkbox"><label><input name="preferences" value="3" type="checkbox" class="input-text">Reactive to other dogs or cats</label></li>
+              <li class="checkbox"><label><input name="preferences" value="4" type="checkbox" class="input-text">Sick</label></li>
+              <li class="checkbox"><label><input name="preferences" value="4" type="checkbox" class="input-text">High-energy</label></li>
+              <li class="checkbox"><label><input name="preferences" value="4" type="checkbox" class="input-text">Senior animals</label></li>
+              <li class="checkbox"><label><input name="preferences" value="4" type="checkbox" class="input-text">Puppies or kittens</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="input-label">
+            <label for="comments">Anything else you would like us to know before matching you with a foster pet?</label>
+          </div>
+          <div class="input-enter">
+            <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comments here..."></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
