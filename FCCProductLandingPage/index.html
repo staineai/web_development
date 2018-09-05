@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Himalayan Sightseeing Tours</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <i id="header-img" class="fa fa-paper-plane"></i>
+        <p>Himalyan Flights</p>
+      </div>
+      <nav id="nav-bar">
+        <span><a class="nav-link" href="#about">About</a></span>
+        <span><a class="nav-link" href="#reviews">Reviews</a></span>
+        <span><a class="nav-link" href="#pricing">Pricing</a></span>
+        <span><a class="nav-link" href="#contact">Contact</a></span>
+      </nav>
+    </header>
+
+    <main>
+      <div id="about">
+        <div class="container">
+          <h1>Experience the Himalayas like never before</h1>
+          <video id="video" controls>
+            <source src="resources/videos/himalayan_flight.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div id="reviews" class="container">
+        <div class="review">
+          <p>"The most spectacular views!"<br><br>~Anne from IL</p>
+        </div>
+        <div class="review">
+          <p>"An absolute must see in Nepal!!"<br><br>~Mark from NY</p>
+        </div>
+        <div class="review">
+          <p>"The best way to experience the Himalayas!"<br><br>~John from CA</p>
+        </div><br>
+      </div>
+
+      <div id="pricing">
+        <div class="container">
+          <div class="price">
+            <h2>Everest region flight</h2>
+            <p>$500</p>
+            <p>2-3 hours</p>
+            <button class="btn" type="submit">select</button>
+          </div>
+          <div class="price">
+            <h2>Annapurna region flight</h2>
+            <p>$400</p>
+            <p>2-3 hours</p>
+            <button class="btn" type="submit">select</button>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="container">
+        <h2>Questions? Interested in the expierence of a lifetime? Email us!</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+          <input id="submit" type="submit" value="Get Started" class="btn"></input>
+        </form>
+      </div>
+
+
+    </main>
+  </body>
+</html>

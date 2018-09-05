@@ -1,0 +1,158 @@
+html {
+  color: #1C2F33;
+  font-family: 'Raleway', sans-serif;;
+  font-size: 16px;
+}
+
+a {
+  color: #F0F3F7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #568386;
+}
+
+header {
+  background-color: #1C2F33;
+  display: flex;
+  padding: 0.75rem;
+}
+
+.logo {
+  color: #F0F3F7;
+  display: flex;
+  flex-grow: 1;
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+i {
+  color: #ED6565;
+  margin-right: 0.5rem;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+nav span {
+  padding: 0.5rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+#about {
+  background-color: #568386;
+}
+
+#about .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+h1 {
+  background-color: #F0F3F7;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  width: 75%;
+}
+
+video {
+  background-color: #F0F3F7;
+  margin: auto;
+  padding: 1rem;
+  width: 75%;
+}
+
+#reviews.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.review {
+  align-items: center;
+  background-color: #B0BED8;
+  border-radius: 5px;
+  display: flex;
+  font-style: italic;
+  justify-content: center;
+  line-height: 1.5rem;
+  margin: 0 2.5%;
+  padding: 3rem 1rem;
+  text-align: center;
+  width: 30%;
+}
+
+#pricing {
+  background-color: #568386;
+}
+
+#pricing .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 100%;
+}
+
+.price {
+  align-items: center;
+  background-color: #F0F3F7;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.price h2 {
+  background-color: #ED6565;
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.price p {
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #ED6565;
+  border-radius: 5px;
+  color: #F0F3F7;
+  font-family: "Raleway", sans-serif;
+  height: 2.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0px solid;
+}
+
+#contact.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 50%;
+}
+
+#contact form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
