@@ -1,0 +1,278 @@
+/* Universal Styles */
+html {
+  font-family: "Cabin";
+  font-size: 18px;
+}
+
+h1, h2 {
+  font-family: 'Lora';
+}
+
+strong {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(10, 56, 51, 0.75);
+  text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Welcome page styles */
+.jumbotron {
+  background-image: url("https://github.com/staineai/staineai.github.io/blob/master/resources/css/images/himalayas.jpg?raw=true");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 0;
+}
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.headline {
+  background-color: rgba(10, 56, 51, 0.5);
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  width: 40%;
+}
+
+.headline h1 {
+  color: white;
+  font-size: 10rem;
+}
+
+.headline p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Work section styles */
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects.container-fluid {
+  padding: 0;
+}
+
+#projects h1 {
+  color: white;
+  background-color: rgba(10, 56, 51, 0.9);
+  font-size: 4rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projects {
+  background: repeating-linear-gradient(
+    180deg,
+    #fff,
+    #fff 33.5%,
+    #AFD6D0 33.5%,
+    #AFD6D0 67%);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.project-tile {
+  background-color: #B2B2B2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 40%;
+}
+
+.project-tile .image-container {
+  flex-grow: 1;
+  height: 300px;
+}
+
+.project-tile h2 {
+  color: white;
+  text-align: center;
+}
+
+.project-tile p {
+  flex: 1;
+}
+
+.project-tile .btn {
+  background-color: rgba(10, 56, 51, 0.7);
+  color: white;
+  margin: auto;
+}
+
+.project-tile .btn:hover {
+  background-color: rgba(10, 56, 51, 0.9);
+}
+
+/* About section styles */
+#about {
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section {
+  display: flex;
+  width: 100%;
+}
+
+.half {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
+  width: 50%;
+}
+
+.half .image-container {
+  align-self: flex-end;
+  background-color: #AFD6D0;
+  margin: 2rem  3rem;
+  padding: 2rem;
+  width: 50%;
+}
+
+.half h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+.half p {
+  font-size: 0.9rem;
+  width: 50%;
+}
+
+.skills {
+  background-color: rgba(10, 56, 51, 0.9);
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.skill p {
+  flex: 1;
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-align: right;
+}
+
+.skill-level {
+  flex: 1;
+  margin: 0.5rem;
+  text-align: left;
+}
+
+.skill-level i {
+  padding-right: 1rem;
+}
+
+#about .btn {
+  background-color: #B2B2B2;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#about .btn:hover {
+  background-color: #AFD6D0;
+}
+
+/* Contact section style */
+
+#contact h1 {
+  color: rgba(109, 181, 170, 0.75);
+  text-align: center;
+  margin: 1rem auto;
+}
+#contact ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 3rem 0;
+}
+
+#contact ul li {
+  color: #B2B2B2;
+  flex: 1;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#contact ul li i:hover {
+  color: rgba(10, 56, 51, 0.9);
+}
+
+#contact .fa {
+  color: rgba(155, 155, 161, 0.75);
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-tile .image-container {
+    flex-grow: 1;
+    height: 200px;
+  }
+
+  .project-tile h2 {
+    font-size: 1.5rem;
+  }
+
+  .half .image-container {
+    padding: 1.5rem;
+  }
+
+  .half h1 {
+    font-size: 2rem;
+  }
+}
