@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(255, 242, 242);
+  color: rgb(32, 64, 86);
+  font-family: "Work Sans", sans-serif;
+  min-width: 400px;
+}
+
+.container {
+  padding-top: 5.25rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  color: rgb(74, 74, 74);
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(32, 64, 86);
+  border: 4px solid #ffffff;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  font-weight: 900;
+  font-size: 7rem;
+  height: 12.5rem;
+  justify-content: center;
+
+}
